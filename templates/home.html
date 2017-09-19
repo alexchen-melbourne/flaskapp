@@ -1,0 +1,17 @@
+{% extends 'layout.html' %} 
+
+{% block body %}
+
+<div class="jumbotron">
+    <h1>Flask APP</h1>
+    <p>This is web based app to visually show capstone project.</p>
+</div>
+
+<form action="/send" method="POST">
+    <div class="form-group">
+        <input type="text" name="age">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Submit">
+</form>
+
+{% endblock %}
